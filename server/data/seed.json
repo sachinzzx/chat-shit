@@ -1,0 +1,94 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "name": "Sachin Kumar",
+      "bio": "Building the future of mobile chat 🚀",
+      "status": "online",
+      "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Sachin"
+    },
+    {
+      "id": "u2",
+      "name": "Vaibhav Sharma",
+      "bio": "React Native & Full-Stack wizard ⚡",
+      "status": "online",
+      "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Vaibhav"
+    },
+    {
+      "id": "u3",
+      "name": "Rohit Verma",
+      "bio": "Design & UX enthusiast 🎨",
+      "status": "offline",
+      "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Rohit"
+    },
+    {
+      "id": "u4",
+      "name": "Ananya Roy",
+      "bio": "Always down for late night code & coffee ☕",
+      "status": "online",
+      "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Ananya"
+    },
+    {
+      "id": "u5",
+      "name": "Aditya Singh",
+      "bio": "Cloud & DevOps engineer 🐳",
+      "status": "offline",
+      "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Aditya"
+    }
+  ],
+  "conversations": [
+    {
+      "id": "c1",
+      "name": "The ChatShit Squad ⚡",
+      "type": "GROUP",
+      "createdBy": "u1",
+      "participants_ids": ["u1", "u2", "u3", "u4"],
+      "createdAt": 1700000000000,
+      "updatedAt": 1700003600000
+    },
+    {
+      "id": "c2",
+      "name": "Vaibhav Sharma",
+      "type": "DM",
+      "createdBy": "u2",
+      "participants_ids": ["u1", "u2"],
+      "createdAt": 1700000000000,
+      "updatedAt": 1700002000000
+    },
+    {
+      "id": "c3",
+      "name": "Design Reviews 🎨",
+      "type": "GROUP",
+      "createdBy": "u3",
+      "participants_ids": ["u1", "u3"],
+      "createdAt": 1700000000000,
+      "updatedAt": 1700001000000
+    }
+  ],
+  "messages": [
+    {
+      "id": "m1",
+      "conversation_id": "c1",
+      "sender_id": "u1",
+      "content": "Welcome to ChatShit! The fastest, coolest chat app 🔥",
+      "imageInfo": "",
+      "timestamp": 1700000100000
+    },
+    {
+      "id": "m2",
+      "conversation_id": "c1",
+      "sender_id": "u2",
+      "content": "UI looks totally insane now, loving the neon vibes! ⚡",
+      "imageInfo": "",
+      "timestamp": 1700000500000
+    },
+    {
+      "id": "m3",
+      "conversation_id": "c2",
+      "sender_id": "u2",
+      "content": "Hey bro, tested the Docker container and image uploads, everything works smooth!",
+      "imageInfo": "",
+      "timestamp": 1700001500000
+    }
+  ]
+}

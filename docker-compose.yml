@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  # ⚡ ChatShit Real-time REST & WebSocket Backend
+  chat-backend:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    container_name: chatshit-backend
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - NODE_ENV=production
+      - CORS_ORIGIN=*
+      - MAX_PAYLOAD_SIZE=50mb
+      - DATA_DIR=/app/data
+      - UPLOAD_DIR=/app/uploads
+    volumes:
+      # Persistent storage: chat messages, squads & uploads survive container restarts
+      - ./server/data:/app/data
+      - ./server/uploads:/app/uploads
+    networks:
+      - chatshit-network
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:3000/api/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 5s
+
+networks:
+  chatshit-network:
+    driver: bridge

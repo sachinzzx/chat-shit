@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "933525374336",
+    "project_id": "chat-shit-a9666",
+    "storage_bucket": "chat-shit-a9666.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:933525374336:android:0abc2d57af9161e294ad65",
+        "android_client_info": {
+          "package_name": "com.sachin.chatshit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzy2_ys5R55URnHshIwe8jzWYQepmtbCk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
